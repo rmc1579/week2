@@ -2,6 +2,7 @@
 	margin: 0px;
 	padding: 0px;
 }
+
 body{
 	background: #005AA3;
 	line-height: normal;
@@ -28,7 +29,7 @@ body{
 	background: #fff;
 	margin: 0 auto;
 	position: relative;
-	width: 100%;
+	
 }
 .well {
     min-height: 20px;
@@ -69,7 +70,27 @@ body{
 .imageslider{
 	margin-top:20px;
 }
-@media (min-width: 1200px){}
-	.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
-    width: 870px;
+.imgresponsive{
+	width:100%;
+	display:inline-block;
+}
+@media screen and  (min-width:960px){
+    .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+	    max-width: 870px;
+	}
+}
+@media screen and (min-width:0px) and (max-width:959px){
+	.container{
+		max-width:959px;		
+	}
+	.navbar{
+		content:"=";
+		display:block;
+		font-size:1em;
+		top:0px;
+	}
+	.navbar a{
+		display:block;
+		text-align: left;
+	}
 }
