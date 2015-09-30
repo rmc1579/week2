@@ -311,9 +311,16 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
     };
   }
 
-  MakePerson("Roberto","jun",123);
+  var p1 = MakePerson("Roberto","6/79",123);
+  var p2 = MakePerson("Joe","5/56",123456);
+  var p3 = MakePerson("Chris","3/88",123456789);
 
-  
+  document.write("<br />");
+  document.write("<br />");
+  for (var key in p1) {
+
+    document.write(key + ": " + p1[key] + "<br />");
+  }
 
 //NEXT PROBLEM
 
